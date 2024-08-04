@@ -1,0 +1,134 @@
+
+/* Container styles */
+.chart-container {
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Header styles */
+.chart-container h1 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+/* Responsive canvas for the chart */
+canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .chart-container {
+        padding: 10px;
+    }
+    .chart-container h1 {
+        font-size: 1.5em;
+    }
+}
+.poster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.poster h3 {
+  color: rgb(226, 0, 0);
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-family: var(--thm-font);
+  text-align: center;
+  background-color: #ffffff;
+  border: 15px solid #ffffff;
+  box-shadow: 0 20px 20px rgba(240, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.poster img {
+  max-width: 100%;
+  height: 100;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.poster img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(235, 0, 0, 0.2);
+}
+
+.banyusari {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+}
+
+.box {
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.box img:hover {
+  transform: scale(1.1);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+  max-height: 300%;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}

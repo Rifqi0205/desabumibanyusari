@@ -1,0 +1,22 @@
+
+
+.chart-container {
+    width: 100%;
+    max-width: 800px; /* Atur lebar maksimum jika diinginkan */
+    margin: 0 auto;
+  }
+  
+  canvas {
+    width: 100%;
+    height: auto;
+  }
+  h1 {
+    
+    display: flex;
+    background-color: rgba(209, 8, 8, 0.297);
+    border: 0px solid #a5a5a5;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border-block: auto;
+  }
